@@ -19,6 +19,7 @@ public class Master implements Watcher{
 
     public  Master(String hostPort){
         this.hostPort=hostPort;
+
     }
 
     public void startZK() throws IOException {
