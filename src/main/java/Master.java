@@ -1,7 +1,3 @@
-/**
- * Created by kevin on 12/09/16.
- */
-
 /*Para recibir notificaciones de zookeeper, necesitaremos implementar watchers
 vamos a echar un vistazo a la interfaz watcher.
 */
@@ -9,7 +5,6 @@ vamos a echar un vistazo a la interfaz watcher.
 //public interface Watcher {
 // void process(WatchedEvent event); ---> indica el tipo de evento
 // }
-
 /*** CLIENTE SINCRONO DE ZOOKEEPER ***/
 
 import org.apache.zookeeper.WatchedEvent;
@@ -46,5 +41,4 @@ public class Master implements Watcher{
         m.startZK();
         Thread.sleep(60000);
     }
-
 }
